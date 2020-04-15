@@ -1,6 +1,6 @@
 import sys
 
-class rand(object):
+class Rand(object):
 
 	def __init__(self):
 		self.seed = 0
@@ -19,7 +19,7 @@ class rand(object):
 def main():
 	
 	x = int( sys.argv[1] )
-	rand48 = rand()
+	rand48 = Rand()
 	rand48.srand48(x)
 	for val in range (10):
 
